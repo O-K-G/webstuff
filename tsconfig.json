@@ -23,9 +23,9 @@
       "@dictionaries/*": ["./dictionaries/*"],
       "@components/*": ["./src/app/components/*"],
       "@hooks/*": ["./src/app/hooks/*"],
-      "@interfaces/*": ["./src/app/types/*"],
+      "@interfaces/*": ["./src/app/interfaces/*"],
       "@utils/*": ["./src/app/utils/*"],
-      "@icons/*": ["./src/app/components/icons/*"]
+      "@icons/*": ["./src/app/icons/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

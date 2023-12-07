@@ -1,9 +1,15 @@
 import { type SectionTypes } from '@interfaces/types';
+import { type LegacyRef, forwardRef } from 'react';
 
-export default function Section({ children, className }: SectionTypes) {
+const Section = forwardRef(function Section(
+  { children, className }: SectionTypes,
+  ref: LegacyRef<HTMLElement> | undefined
+) {
   return (
-    <section className={`w-full h-full-svh ${className ?? ''}`}>
+    <section ref={ref} className={`w-full h-full-svh ${className ?? ''}`}>
       {children}
     </section>
   );
-}
+});
+
+export default Section;

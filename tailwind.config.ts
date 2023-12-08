@@ -24,8 +24,8 @@ const config: Config = {
         },
       },
       animation: {
-        'menu-in': 'menu-in 1s ease-in-out',
-        'menu-out': 'menu-out 1s ease-in-out',
+        'menu-in': 'menu-in 0.3s ease-in-out',
+        'menu-out': 'menu-out 0.3s ease-in-out',
       },
     },
   },

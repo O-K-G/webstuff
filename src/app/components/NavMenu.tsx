@@ -33,26 +33,28 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
           !open ? 'animate-menu-out' : 'animate-menu-in'
         }`}
       >
-        {sectionsData.map(({ id, label, ref }) => (
-          <li
-            key={`menu-${id}`}
-            className='bg-white whitespace-nowrap w-full h-full flex items-center justify-center border border-red-500'
-          >
-            <button
-              onClick={() =>
-                ref?.current?.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start',
-                  inline: 'start',
-                })
-              }
-              type='button'
-              className='flex items-center justify-start w-full h-full'
+        {sectionsData.map(({ id, label, ref }) => {
+          return (
+            <li
+              key={`menu-${id}`}
+              className='bg-white whitespace-nowrap w-full h-full flex items-center justify-center border border-red-500'
             >
-              {label}
-            </button>
-          </li>
-        ))}
+              <button
+                onClick={() =>
+                  ref?.current?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'start',
+                  })
+                }
+                type='button'
+                className='flex items-center justify-start w-full h-full'
+              >
+                {label}
+              </button>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

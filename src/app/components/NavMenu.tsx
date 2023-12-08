@@ -1,5 +1,7 @@
 import { type NavMenuTypes } from '@interfaces/types';
 import { useEffect, useState } from 'react';
+import HamburgerIcon from '@icons/hamburger-icon';
+import IconButton from '@components/IconButton';
 
 export default function NavMenu({ sectionsData }: NavMenuTypes) {
   const [open, setIsOpen] = useState(false);
@@ -21,14 +23,12 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
 
   return (
     <nav className='fixed top-0 left-0 h-[1.75rem] hover:h-auto'>
-      <button
+      <IconButton
         id='navButton'
         onClick={() => setIsOpen(true)}
-        type='button'
-        className='transition-all ease-in-out duration-500 hover:rotate-180 absolute top-0 left-0 h-7 w-7 flex items-center justify-center bg-red-500'
-      >
-        x
-      </button>
+        className='transition-all ease-in-out duration-500 hover:rotate-180 absolute top-0 left-0 h-8 w-8'
+        icon={<HamburgerIcon className='icon fill-red-500' />}
+      />
       <ul
         className={`absolute fill-mode-forwards -top-[75svh] left-0 text-red-500 flex-col items-start justify-start w-fit min-w-[6%] overflow-hidden ${animationClassName}`}
       >

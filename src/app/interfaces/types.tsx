@@ -18,3 +18,15 @@ export interface NavMenuTypes {
     ref?: RefObject<HTMLElement> | undefined;
   }>;
 }
+
+export interface IconsTypes {
+  className?: string;
+}
+
+export interface IconButtonTypes {
+  id?: string;
+  onClick: () => void;
+  type?: 'reset' | 'submit' | 'button';
+  className?: string;
+  icon: ReactNode;
+}

@@ -41,6 +41,9 @@
   .parallax-layer {
     @apply absolute right-0 bottom-0 left-0;
   }
+  .icon {
+    @apply shrink-0 h-full w-full pointer-events-none;
+  }
 }
 
 body {

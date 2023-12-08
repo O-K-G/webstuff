@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 export default function NavMenu({ sectionsData }: NavMenuTypes) {
   const [open, setIsOpen] = useState(false);
+  const animationClassName = !open ? 'animate-menu-out' : 'animate-menu-in';
 
   useEffect(() => {
     const handleOnBlur = (e: Event) => {
@@ -29,9 +30,7 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
         x
       </button>
       <ul
-        className={`absolute fill-mode-forwards -top-[75svh] left-0 text-red-500 flex-col items-start justify-start w-fit min-w-[6%] overflow-hidden ${
-          !open ? 'animate-menu-out' : 'animate-menu-in'
-        }`}
+        className={`absolute fill-mode-forwards -top-[75svh] left-0 text-red-500 flex-col items-start justify-start w-fit min-w-[6%] overflow-hidden ${animationClassName}`}
       >
         {sectionsData.map(({ id, label, ref }) => {
           return (

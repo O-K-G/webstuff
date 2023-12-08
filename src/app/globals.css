@@ -52,6 +52,10 @@ body {
   background-size: 100svw 100svh;
 }
 
+.fill-mode-forwards {
+  animation-fill-mode: forwards;
+}
+
 /* All images below are for testing purposes only, in accordance with https://www.pexels.com/ licences, and should be deleted once appropriate images are available. */
 
 .test {

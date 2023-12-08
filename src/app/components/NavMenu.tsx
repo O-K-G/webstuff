@@ -29,8 +29,8 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
         x
       </button>
       <ul
-        className={`transition-all ease-in-out duration-500 text-red-500 absolute top-0 left-0 flex flex-col items-start justify-start w-fit min-w-[6%] overflow-hidden ${
-          !open ? '-translate-y-[75svh]' : ''
+        className={`absolute fill-mode-forwards -top-[75svh] left-0 text-red-500 flex-col items-start justify-start w-fit min-w-[6%] overflow-hidden ${
+          !open ? 'animate-menu-out' : 'animate-menu-in'
         }`}
       >
         {sectionsData.map(({ id, label, ref }) => (
@@ -39,7 +39,6 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
             className='bg-white whitespace-nowrap w-full h-full flex items-center justify-center border border-red-500'
           >
             <button
-              tabIndex={!open ? -1 : 0}
               onClick={() =>
                 ref?.current?.scrollIntoView({
                   behavior: 'smooth',

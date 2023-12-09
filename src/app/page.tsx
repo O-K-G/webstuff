@@ -14,14 +14,15 @@ export default function Home() {
       id: 3,
       label: 'Section 3',
       ref: useRef(null),
-      el: <div className='test w-1/2 h-1/2' />,
+      el: <div className='bg-test-background2 background-images w-1/2 h-1/2' />,
       className: 'bg-yellow-500',
     },
     {
       id: 4,
       label: 'Section 4',
       ref: useRef(null),
-      className: 'flex items-center justify-center test-2',
+      className:
+        'flex items-center justify-center bg-test-background3 background-images',
     },
     { id: 5, label: 'Section 5', ref: useRef(null) },
   ];

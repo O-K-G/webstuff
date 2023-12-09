@@ -12,6 +12,10 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        // All images below are for testing purposes only, in accordance with https://www.pexels.com/ licences, and should be deleted once appropriate images are available.
+        'test-background': "url('/test.jpg')",
+        'test-background2': "url('/test2.jpg')",
+        'test-background3': "url('/test3.jpg')",
       },
       keyframes: {
         'menu-in': {

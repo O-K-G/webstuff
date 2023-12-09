@@ -44,35 +44,15 @@
   .icon {
     @apply shrink-0 h-full w-full pointer-events-none;
   }
+  .background-images {
+    @apply bg-no-repeat bg-fixed bg-center bg-cover;
+  }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-image: url('/test.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100svw 100svh;
 }
 
 .fill-mode-forwards {
   animation-fill-mode: forwards;
-}
-
-/* All images below are for testing purposes only, in accordance with https://www.pexels.com/ licences, and should be deleted once appropriate images are available. */
-
-.test {
-  background-image: url('/test2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100% 100svh;
-}
-
-.test-2 {
-  background-image: url('/test3.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100% 100svh;
 }

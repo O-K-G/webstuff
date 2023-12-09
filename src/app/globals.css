@@ -17,11 +17,14 @@
 }
 
 @layer utilities {
+  .h-full-svh {
+    height: 100svh;
+  }
   .perspective-1 {
     perspective: 0.063rem;
   }
-  .h-full-svh {
-    height: 100svh;
+  .fill-mode-forwards {
+    animation-fill-mode: forwards;
   }
   .translate-z-0 {
     transform: translateZ(0rem);
@@ -51,8 +54,4 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-}
-
-.fill-mode-forwards {
-  animation-fill-mode: forwards;
 }

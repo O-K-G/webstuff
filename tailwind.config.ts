@@ -13,9 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         // All images below are for testing purposes only, in accordance with https://www.pexels.com/ licences, and should be deleted once appropriate images are available.
-        'test-background': "url('/test.jpg')",
-        'test-background2': "url('/test2.jpg')",
-        'test-background3': "url('/test3.jpg')",
+        'test-background': "url('/test.jpg?cacheversion=1')",
+        'test-background2': "url('/test2.jpg?cacheversion=1')",
+        'test-background3': "url('/test3.jpg?cacheversion=1')",
       },
       keyframes: {
         'menu-in': {

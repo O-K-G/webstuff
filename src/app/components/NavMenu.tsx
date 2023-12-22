@@ -26,7 +26,7 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
       <IconButton
         id='navButton'
         onClick={() => setIsOpen(true)}
-        className='transition-all ease-in-out duration-500 hover:rotate-180 absolute top-0 left-0 h-8 w-8'
+        className='transition-all ease-in-out duration-500 hover:rotate-180 absolute top-0 left-0 size-8'
         icon={<HamburgerIcon className='icon fill-red-500' />}
       />
       <ul
@@ -36,7 +36,7 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
           return (
             <li
               key={`menu-${id}`}
-              className='bg-white whitespace-nowrap w-full h-full flex items-center justify-center border border-red-500'
+              className='bg-white whitespace-nowrap size-full flex items-center justify-center border border-red-500'
             >
               <button
                 onClick={() =>
@@ -47,7 +47,7 @@ export default function NavMenu({ sectionsData }: NavMenuTypes) {
                   })
                 }
                 type='button'
-                className='flex items-center justify-start w-full h-full'
+                className='flex items-center justify-start size-full'
               >
                 {label}
               </button>

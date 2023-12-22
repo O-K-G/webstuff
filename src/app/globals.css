@@ -17,9 +17,6 @@
 }
 
 @layer utilities {
-  .h-full-svh {
-    height: 100svh;
-  }
   .perspective-1 {
     perspective: 0.063rem;
   }
@@ -39,7 +36,7 @@
 
 @layer components {
   .parallax {
-    @apply h-full-svh overflow-x-hidden perspective-1;
+    @apply h-svh overflow-x-hidden perspective-1;
   }
   .parallax-layer {
     @apply absolute right-0 bottom-0 left-0;

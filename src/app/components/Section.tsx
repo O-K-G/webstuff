@@ -6,7 +6,7 @@ const Section = forwardRef(function Section(
   ref: LegacyRef<HTMLElement> | undefined
 ) {
   return (
-    <section ref={ref} className={`w-full h-full-svh ${className ?? ''}`}>
+    <section ref={ref} className={`w-full h-svh ${className ?? ''}`}>
       {children}
     </section>
   );
